@@ -1,17 +1,22 @@
 {
-  "name": "fe-9-client",
+  "name": "spa-vanillaJs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "serve -s"
+    "start": "nodemon server.js"
   },
   "keywords": [],
-  "author": "rotoshine",
+  "type": "module",
+  "author": "parkjeyoung",
   "license": "ISC",
   "dependencies": {
-    "serve": "^12.0.0",
     "@babel/core": "^7.8.3",
-    "@babel/preset-env": "^7.8.3"
+    "@babel/preset-env": "^7.8.3",
+    "express": "^4.18.1",
+    "serve": "^12.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
