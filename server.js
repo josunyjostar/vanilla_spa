@@ -10,6 +10,11 @@ const port = 3000;
 console.log(__dirname);
 app.use(express.static(path.join(__dirname, '/src')));
 
+//새로고침시 index.html 파일 전송
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'src/index.html'));
+});
+
 app.listen(port, () => {
   console.log(`server is listening on port :${port}`);
 });
