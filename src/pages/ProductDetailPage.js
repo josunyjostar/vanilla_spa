@@ -1,4 +1,4 @@
-export default function ProductDatailPage({app, productId}) {
+export default function ProductDatailPage({productId}) {
   this.state = {
     productId,
   };
@@ -7,7 +7,5 @@ export default function ProductDatailPage({app, productId}) {
   page.className = 'ProductDatailPage';
   page.innerHTML = `<h1>상품 정보</h1>`;
 
-  this.render = () => {
-    app.appendChild(page);
-  };
+  return page;
 }

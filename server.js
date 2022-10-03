@@ -7,7 +7,8 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const port = 3000;
 
-app.use(express.static(path.join(__dirname, '/src/public')));
+console.log(__dirname);
+app.use(express.static(path.join(__dirname, '/src')));
 
 app.listen(port, () => {
   console.log(`server is listening on port :${port}`);
